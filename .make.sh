@@ -16,9 +16,11 @@ echo "Creating .git-templates/hooks folder at ~/"
 mkdir -p ~/.git-templates/hooks
 
 # Move files into that folder
+echo "Copy hooks into templates folder"
 cp /hooks/. ~/.git-templates/hooks
 
 # Add folder to the .git config
+echo "Adding templates folder to git configuration"
 git config --global init.templatedir '~/.git-templates'
 
 # CD into each project and re-initialize it
