@@ -22,10 +22,11 @@ cp /hooks/. ~/.git-templates/hooks
 git config --global init.templatedir '~/.git-templates'
 
 # CD into each project and re-initialize it
+cd $path
 for dir in *
 do
 	cd $dir
 	echo "Reinitializing $dir"
 	git init
-	cd
+	cd ../
 done
