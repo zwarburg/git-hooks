@@ -17,7 +17,7 @@ mkdir -p ~/.git-templates/hooks
 
 # Move files into that folder
 echo "Copy hooks into templates folder"
-cp /hooks/. ~/.git-templates/hooks
+cp -r hooks/. ~/.git-templates/hooks
 
 # Add folder to the .git config
 echo "Adding templates folder to git configuration"
